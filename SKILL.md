@@ -1,5 +1,3 @@
-```
----
 name: riskguard-swap
 version: 1.0
 description: Risk-aware token swap skill for X Layer. Checks security first, then executes safe swap.
