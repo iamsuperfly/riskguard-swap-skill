@@ -1,6 +1,5 @@
-cat > test-riskguard.js << 'EOF'
 // test-riskguard.js
-// Improved RiskGuard Swap Skill Test
+// RiskGuard Swap Skill Test
 // Built for Build X Season 2 – Skills Arena
 // Author: Superfly (@killsh0tx) - iamsuperfly
 
@@ -19,7 +18,7 @@ async function checkRisk() {
     console.log("    Result: Good liquidity, low slippage (< 0.8%)");
 
     console.log("  Overall risk score: LOW (18/100)\n");
-    return true;   // risk passed
+    return true;
 
   } catch (err) {
     console.error("Risk check failed:", err.message);
@@ -36,8 +35,8 @@ async function executeSafeSwap() {
     console.log("  Using okx-dex-swap with best route");
     console.log("  Gas estimate: very low");
     console.log("  Safe swap simulation completed");
-    console.log("  Real onchain proof: Done manually in OKX Wallet (TX hash added in README.md)\n");
-    return true;   // success
+    console.log("  Real onchain proof: Done manually in OKX Wallet (TX hash in README.md)\n");
+    return true;
 
   } catch (err) {
     console.error("Swap execution failed:", err.message);
@@ -63,4 +62,3 @@ async function runRiskGuardTest() {
 
 // Run the test
 runRiskGuardTest().catch(console.error);
-EOF
