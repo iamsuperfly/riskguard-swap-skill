@@ -18,8 +18,10 @@ Open your AI agent and type a prompt like:
 > Use RiskGuard to swap 1.5 USDC to USDT on X Layer if the risk is low
 
 The agent will automatically:
-- Run risk checks first
-- Only swap if everything is safe
+- Follow the RiskGuard flow (risk checks before swap)
+- Proceed with swap only when risk conditions pass
+
+> Note: This repository demonstrates a local simulated RiskGuard flow and includes a real onchain proof transaction shown below.
 
 ### Onchain Proof
 **Transaction Hash:** `0xe7eb7632d7c51391f2b4ed9ac142074a4248cdc125a0b09ae946213db334c187`  
@@ -30,6 +32,8 @@ The agent will automatically:
 ```bash
 node test-riskguard.js
 ```
+
+The local script is a simulation of the flow for demo/testing purposes.
 
 > **Build X Season 2 Hackathon – Skills Arena Entry**  
 **Author:** Superfly (@killsh0tx)
