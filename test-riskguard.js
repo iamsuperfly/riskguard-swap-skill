@@ -31,7 +31,7 @@ async function executeSafeSwap() {
   console.log("Step 2: Risk passed - Executing safe swap...");
 
   try {
-    console.log("  Swapping 0.05 USDC to USDT on X Layer");
+    console.log("  Swapping 1.5 USDC to USDT on X Layer");
     console.log("  Using okx-dex-swap with best route");
     console.log("  Gas estimate: very low");
     console.log("  Safe swap simulation completed");
