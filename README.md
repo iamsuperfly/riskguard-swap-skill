@@ -1,15 +1,11 @@
-```markdown`
 # RiskGuard Swap Skill
-
-**Build X Season 2 Hackathon – Skills Arena Entry**  
-**Author:** Superfly (@killsh0tx)  
-**Repo:** https://github.com/iamsuperfly/riskguard-swap-skill
 
 A lightweight, reusable **safety-first swap skill** for any AI agent on X Layer.
 
 Before executing any swap it:
 1. Checks risk using Onchain OS skills (okx-security + okx-dex-market)
-2. Only proceeds with the swap if risk is low (okx-dex-swap)
+2. Evaluates conditions in real-time
+3. Executes swap only if risk is low (okx-dex-swap)
 
 ### How to install in any AI agent
 ```bash
@@ -34,3 +30,6 @@ The agent will automatically:
 ```bash
 node test-riskguard.js
 ```
+
+> **Build X Season 2 Hackathon – Skills Arena Entry**  
+**Author:** Superfly (@killsh0tx)
